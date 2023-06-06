@@ -20,7 +20,7 @@ function GContact() {
 
 
 
-                    <iframe className=' w-3/4  h-screen'
+                    <iframe className=' md:w-3/4  w-full h-screen'
                         src="https://docs.google.com/forms/d/e/1FAIpQLSeHeWD9MVKdtxbc6wyaC0c8dqJIYN5-1JeENBLiAaDFOqFukQ/viewform?embedded=true"
                     >Loading…</iframe>
 
