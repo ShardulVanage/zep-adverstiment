@@ -124,12 +124,11 @@ export function Testimonials() {
         <section className="py-8 sm:py-10 lg:py-16">
             <Container className="text-center">
                 <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-                    Some kind words from early customers...
+                    Some kind words from our Student...
                 </h2>
                 <p className="mt-4 text-lg tracking-tight text-slate-600">
-                    I worked with a small group of early access customers to make sure all
-                    of the content in the book was exactly what they needed. Hears what
-                    they had to say about the finished product.
+                    we work collectively to offer valuable learning experiences to our customers.
+                    Our aim is to provide high-quality courses that meet the unique needs and goals of our clients.
                 </p>
             </Container>
             <Expandable>

@@ -9,7 +9,7 @@ const includedFeatures = [
 
 export default function Pricing() {
     return (
-        <div className="bg-gray-100">
+        <div name='pricing' className="bg-gray-100">
             <div className="pt-12 sm:pt-16 lg:pt-20">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="text-center">
@@ -54,8 +54,9 @@ export default function Pricing() {
                             </div>
                             <div className="bg-gray-50 py-8 px-6 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
                                 <p className="text-lg font-medium leading-6 text-gray-900">Pay once, own it forever</p>
-                                <div className="mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-gray-900">
-                                    <span>₹4999</span>
+                                <div className="mt-4 flex flex-col items-center justify-center text-5xl font-bold tracking-tight text-gray-900">
+                                    <span className='pl-20 text-4xl text-red-400'><del >₹9999</del><span className='text-xl text-black pl-2'>50%</span><span className=' pl-1 text-lg text-black '>Off</span> </span>
+                                    <span>₹4999  </span>
                                     <span className="ml-3 text-xl font-medium tracking-normal text-gray-500"></span>
                                 </div>
                                 <p className="mt-4 text-sm">

@@ -1,11 +1,31 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-scroll'
 
 import "./CSS/btn.css"
 
 
 export default function Hero() {
+
+    const [isHovered, setIsHovered] = useState(false);
+    const [displayText, setDisplayText] = useState('First Text');
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDisplayText(isHovered ? '₹4999' : <del className=''>₹9999</del>);
+        }, 700); // Delay in milliseconds
+
+        return () => clearTimeout(timer);
+    }, [isHovered]);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -41,11 +61,14 @@ export default function Hero() {
                                 India's No.1 Data Analytics Course which has many features for you so you can excel and get job ready for various roles.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
-                                <button class="btn">
-                                    <span class="btn-text-one">Buy Now</span>
-                                    <span class="btn-text-two">₹4999</span>
-                                </button>
-                                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                                <Link to='pricing' smooth >
+                                    <button class={`btn ${isHovered ? '' : ''}`} onMouseEnter={handleMouseEnter}
+                                        onMouseLeave={handleMouseLeave}>
+                                        <span class="btn-text-one ">Buy Now</span>
+                                        <span className={`btn-text-two transform translate-x-4`} > {displayText}</span>
+                                    </button>
+                                </Link>
+                                <a href="https://zep.thinkific.com/order?ct=7e7f1a00-7ae4-4d33-b79e-8e5f3f00fa92" className="text-base font-semibold leading-7 text-gray-900">
                                     Free preview <span aria-hidden="true">→</span>
                                 </a>
                             </div>
