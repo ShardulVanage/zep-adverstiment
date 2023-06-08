@@ -27,7 +27,7 @@ function GContact() {
                 <div className="md:grid sm:grid-cols-2  grid-cols-1 md:gap-1  justify-between">
                     <div className="md:col-span-1 h-1/2" >
                         <div className="px-4 sm:px-0">
-                            <h3 className="text-3xl font-medium leading-6 text-gray-900">Contact us</h3>
+                            <h3 className="text-4xl font-medium leading-6 text-gray-900">Contact us</h3>
                             <p className="mt-1 text-sm text-gray-600 pt-4">Use a permanent address where you can receive mail.</p>
                             <div className='flex justify-center'>
                                 <Location />
