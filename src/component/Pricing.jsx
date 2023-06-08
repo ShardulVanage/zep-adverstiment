@@ -55,7 +55,7 @@ export default function Pricing() {
                             <div className="bg-gray-50 py-8 px-6 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
                                 <p className="text-lg font-medium leading-6 text-gray-900">Pay once, own it forever</p>
                                 <div className="mt-4 flex flex-col items-center justify-center text-5xl font-bold tracking-tight text-gray-900">
-                                    <span className='pl-20 text-4xl text-red-400'><del >₹9999</del><span className='text-xl text-black pl-2'>50%</span><span className=' pl-1 text-lg text-black '>Off</span> </span>
+                                    <span className='pl-20 text-4xl text-indigo-400'><del >₹9999</del><span className='text-xl text-black pl-2'>50%</span><span className=' pl-1 text-lg text-black '>Off</span> </span>
                                     <span>₹4999  </span>
                                     <span className="ml-3 text-xl font-medium tracking-normal text-gray-500"></span>
                                 </div>
@@ -67,7 +67,7 @@ export default function Pricing() {
                                 <div className="mt-6">
                                     <div className="rounded-md shadow">
                                         <a
-                                            href="#"
+                                            href="https://zep.thinkific.com/order?ct=7e7f1a00-7ae4-4d33-b79e-8e5f3f00fa92"
                                             className="flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 text-base font-medium text-white hover:bg-gray-900"
                                         >
                                             Get Access

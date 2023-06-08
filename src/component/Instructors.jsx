@@ -1,12 +1,34 @@
 import simg from "../Img/SatyajitPattnaik.png"
+import kimg from "../Img/KalashJindal.png"
+import jimg from "../Img/JayCharole.png"
 const people = [
     {
+
         name: 'Satyajit Pattnaik',
         role: 'Data Consultant',
         imageUrl: simg,
         twitterUrl: '#',
         linkedinUrl: 'https://www.linkedin.com/in/satyajitpattnaik/',
     },
+
+    {
+
+        name: 'Kalash Jindal',
+        role: 'Data Consultant',
+        imageUrl: kimg,
+        twitterUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/kalashjindal/',
+    },
+
+    {
+
+        name: 'Jay Charole',
+        role: 'Data Consultant',
+        imageUrl: jimg,
+        twitterUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/jay-charole-2ab005153/',
+    },
+
     // More people...
 ]
 

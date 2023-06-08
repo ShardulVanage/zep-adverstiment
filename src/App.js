@@ -8,13 +8,17 @@ import Pricing from './component/Pricing';
 import Contact from './component/Contact';
 import { Testimonials } from './component/Testimoni';
 import GContact from './component/GContact';
+import Banner from './component/Banner';
+import Certificate from './component/Certificate';
 
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <Hero></Hero>
       <Feature />
+      <Certificate />
       <Sylabus />
       <Instructor />
       <Pricing />
