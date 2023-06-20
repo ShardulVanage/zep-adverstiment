@@ -1,17 +1,18 @@
 import {
-    BriefcaseIcon,
-    VideoCameraIcon,
-    CodeBracketIcon,
+    CreditCardIcon,
+    InboxStackIcon,
+    ChatBubbleLeftRightIcon,
     ViewfinderCircleIcon,
     AcademicCapIcon,
-    ServerIcon,
+    PhotoIcon,
 } from '@heroicons/react/20/solid'
+
 
 const features = [
     {
-        name: 'Live Instructor Led Classes.',
-        description: 'Attend LIVE lectures by the instructors thrice the week.',
-        icon: VideoCameraIcon,
+        name: 'Self Paced Program with 24X7 Support.',
+        description: 'Learn the program at your own pace',
+        icon: InboxStackIcon,
     },
     {
         name: 'Course Completion Certificate',
@@ -19,24 +20,24 @@ const features = [
         icon: AcademicCapIcon,
     },
     {
-        name: '2 Months Internship Certificate',
-        description: 'We can also provide 2 Months internship certificate from our side if you wish to.',
-        icon: BriefcaseIcon,
+        name: 'Internship Certificate ',
+        description: 'Get a score of 80% in the assignments and you will be handed over an internship offer.',
+        icon: CreditCardIcon,
     },
     {
         name: 'Class Recordings.',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+        description: 'Unlimited Hassle Free Access',
         icon: ViewfinderCircleIcon,
     },
     {
-        name: 'Access to Udemy Courses',
-        description: 'If you enroll for the course you will get access to all of the Satyajit Pattnaik Udemy Courses for FREE!!!',
-        icon: CodeBracketIcon,
+        name: ' 24X7 chat support ',
+        description: 'Get unlimited chat support from our experts ',
+        icon: ChatBubbleLeftRightIcon,
     },
     {
         name: 'Project Based Learning with Intense Knowledge',
         description: 'Learn the skills by developing different projects throughout the sessions. ',
-        icon: ServerIcon,
+        icon: PhotoIcon,
     },
 ]
 
@@ -48,7 +49,7 @@ export default function Feature() {
                     <h2 className="text-3xl font-semibold leading-8 tracking-tight text-indigo-400">Features of the course</h2>
 
                     <p className="mt-6 text-lg leading-8 text-gray-300">
-                        India's No.1 Data Analytics Course which has many features for you so you can excel and get job ready for various roles.
+                        India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
                     </p>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 .btn {
     width: 140px;
     height: 50px;
-    background: linear-gradient(to top, #111164, #234490, #2f69a6);
+    /*background: linear-gradient(to top, #111164, #234490, #2f69a6);*/
+    background: linear-gradient(to top, #6e61ab, #4b3987, #6e61ab);
     color: #fff;
     border-radius: 50px;
     border: none;

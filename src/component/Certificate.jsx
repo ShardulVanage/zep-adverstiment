@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import certifidcate from '../Img/google-data-analyst.jpg'
+import certifidcate from '../Img/google-data-analyst.jpeg'
 
 const navigation = [
     { name: 'Product', href: '#' },
@@ -39,11 +39,10 @@ export default function Certificate() {
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
                             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                Become a Certified Data Analytics
+                                Become a Certified Data/Business/BI Analyst
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                                fugiat veniam occaecat fugiat aliqua.
+                            <p className="mt-6 text-xl leading-8 text-gray-600">
+                                Boost Your Career with In-Demand Data and Business Analysis Skills: Get Certified Today!
                             </p>
 
                         </div>
@@ -53,8 +52,8 @@ export default function Certificate() {
                                     src={certifidcate}
                                     alt="App screenshot"
                                     width={2000}
-                                    height={700}
-                                    className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                                    height={600}
+                                    className="rounded-md shadow-2xl ring-1 ring-gray-900/10 "
                                 />
                             </div>
                         </div>
@@ -62,7 +61,7 @@ export default function Certificate() {
 
                             <button href="https://zep.thinkific.com/order?ct=7e7f1a00-7ae4-4d33-b79e-8e5f3f00fa92"
                                 type="button" class="text-white bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2">
-                                Become a Certified Data Analytics</button>
+                                Get Certified Now!</button>
                         </div>
                     </div>
                     <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">

@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v3.0+ */
-import { Disclosure } from '@headlessui/react'
-import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+import { Disclosure, } from '@headlessui/react'
+import { CameraIcon, MinusSmallIcon, PlusSmallIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
 const abc = [
     "Data Sourcing (Connecting various types of files)",
     " Data Cleaning Techniques (Handling null values, outlier treatment, Filtering data, etc.)",
@@ -13,17 +13,21 @@ export default function Sylabus() {
         {
             question: "Introduction to Data Analytics",
             answer: [
-                "What is Data Analytics",
+
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>What is Data Analytics <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
+
                 "Importance of Data Analytics",
-                "Types of Data",
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>Types of Data <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
+
+
                 "Types of Statistical Analysis",
                 "Steps to obtain a Data Analytics solution",
-                "1 Business Understanding",
-                "2 Data Understanding",
-                "3 Data Collection",
-                "4 Data Preparation",
-                "5 Data Modelling",
-                "6 Deployment",
+                " Business Understanding",
+                " Data Understanding",
+                " Data Collection",
+                " Data Preparation",
+                " Data Modelling",
+                " Deployment",
                 "Use Case",
             ],
         },
@@ -33,7 +37,9 @@ export default function Sylabus() {
             question: "Python for Data Analytics",
             answer: [
                 "Course Contents",
-                " Python Introduction",
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>Python Introduction <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
+
+
                 "Variables & Keywords",
                 "Datatypes & Operators",
                 "Data Structures - Lists",
@@ -46,13 +52,13 @@ export default function Sylabus() {
                 "Map Reduce Filter",
                 " OOPS Concepts",
                 "Control Structures in Python",
-                "Python Quiz #1",
+
                 "NumPy",
                 "Pandas",
                 "Data Visualization",
                 "Matplotlib",
                 "Seaborn",
-                "Python Quiz #2",
+                <b>Python Quiz </b>,
             ],
         },
         {
@@ -60,7 +66,9 @@ export default function Sylabus() {
             answer: [
                 "Course Contents",
                 "  Agenda",
-                "Data Analytics/Science Process",
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>Data Analytics/Science Process <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
+
+
                 "  What is EDA",
                 " Visualization",
                 "Steps involved in EDA (Data Sourcing)",
@@ -95,7 +103,7 @@ export default function Sylabus() {
                 " Bivariate Analysis (Case Study)",
                 "Bivariate Analysis (Case Study)",
                 "EDA Report (Case Study)",
-                "EDA Quiz",
+                <b>EDA Quiz</b>,
             ],
         },
         {
@@ -215,7 +223,7 @@ export default function Sylabus() {
 
                 " Correlation",
 
-                "Statistcs Quiz",
+                <b>Statistcs Quiz</b>,
             ],
         },
         {
@@ -240,7 +248,7 @@ export default function Sylabus() {
                 "Stored Procedures",
                 "Windows Function",
                 "SQL-Python connectivity",
-                "SQL Quiz",
+                <b>SQL Quiz</b>,
             ],
         },
         {
@@ -263,7 +271,7 @@ export default function Sylabus() {
                 "Pivot Tables",
                 "Dashboarding in Excel",
                 "Others",
-                "Excel Quiz",
+                <b>Excel Quiz</b>,
             ],
         },
 
@@ -302,7 +310,7 @@ export default function Sylabus() {
                 "PBI Best Practices",
                 "Formatting",
                 "EDA",
-                "Power BI Quiz",
+                <b>Power BI Quiz</b>,
             ],
         },
         {
@@ -338,7 +346,7 @@ export default function Sylabus() {
                 "Forecasting in Tableau",
                 "Analytics in Tableau",
                 "Dashboarding",
-                "Tableau Quiz",
+                <b>Tableau Quiz</b>,
             ],
         },
         {
@@ -356,7 +364,9 @@ export default function Sylabus() {
                 "k-nearest neighbors (Theory)",
                 "k-NN Example (Excel)",
                 "Classification Practicals Part 1",
-                "k-nearest neighbors (Code)",
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>k-nearest neighbors (Code) <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
+
+
                 "FREE PREVIEW",
                 "Decision Trees (Theory)",
                 "Decision Tree (Code)",
@@ -370,7 +380,7 @@ export default function Sylabus() {
                 "Clustering (Code)",
                 "Time Series Forecasting (Theory)",
                 "Time Series Forecasting (Code)",
-                "Predictive Analytics Quiz",
+                <b>Predictive Analytics Quiz</b>,
             ],
         },
         {
@@ -379,7 +389,7 @@ export default function Sylabus() {
                 "Course Contents",
                 "Introduction to ETL & Data Warehouse",
                 "What is ETL?",
-                "ETL Tools & Azure Data Factory Architecture",
+                <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>ETL Tools & Azure Data Factory Architecture<span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
                 "FREE PREVIEW",
                 "What is Data Warehouse?",
                 "Benefits of Data Warehousing",
@@ -389,13 +399,13 @@ export default function Sylabus() {
                 "Data Lakes",
                 "Data Lake vs Data Warehouse",
                 "Elements of Data Lake",
-                "ETL & Data Warehousing Quiz#1",
+                <b>ETL & Data Warehousing Quiz</b>,
             ],
         },
         {
-            question: "Interview Q&A Guides",
+            question: "Interview  Guides",
             answer: [
-                "Interview Guides"
+                "Python", "Statistics", "Power BI", "Tableau", "SQL"
             ],
         },
         {
@@ -407,9 +417,10 @@ export default function Sylabus() {
             ],
         },
         {
-            question: "Assignment",
+            question: "Final Assignment",
             answer: [
-                "Final Assignment",
+                "This is a graded assignment, a score of 70% and above guarantees you a course completion certificate, and a score of   80% and above guarantees an internship opportunity from Zep or their partner companies"
+
             ],
         },
         // Add more FAQs here...
@@ -454,6 +465,7 @@ export default function Sylabus() {
 
 
                 </div>
+                <p className='mt-16'><b>Note:</b> The internships are not guaranteed to be paid, but it helps a lot to gain industry level knowledge.</p>
             </div>
         </div>
     )
