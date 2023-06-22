@@ -43,7 +43,7 @@ export default function Banner() {
                     <p className="sm:text-sm sm:leading-6 text-gray-900 text-xs flex sm:flex-row flex-col">
                         <strong className="font-semibold  ">Data Analytics Masters 2023.</strong>
                         <hr />
-                        <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
+                        <svg viewBox="0 0 2 2" className="mx-2  h-0.5 w-0.5 fill-current hidden sm:inline" aria-hidden="true">
                             <circle cx={1} cy={1} r={1} />
                         </svg>
                         Zep Analytics. Join us before {nextMonthDateString} 1 to avail 50% discount
