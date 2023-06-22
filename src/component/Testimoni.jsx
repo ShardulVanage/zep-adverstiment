@@ -3,6 +3,8 @@ import clsx from 'clsx'
 
 import { Container } from './Container'
 import { Expandable } from './Expandable'
+import { fadeAnimation } from './Motion'
+import { motion } from 'framer-motion'
 
 
 
@@ -134,7 +136,8 @@ export function Testimonials() {
             <Expandable>
                 {({ isExpanded }) => (
                     <>
-                        <ul
+                        <motion.ul
+                            {...fadeAnimation}
                             role="list"
                             className=" mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
                         >
@@ -174,7 +177,7 @@ export function Testimonials() {
                                     </ul>
                                 </li>
                             ))}
-                        </ul>
+                        </motion.ul>
                         <Expandable.Button>Read more testimonials</Expandable.Button>
                     </>
                 )}

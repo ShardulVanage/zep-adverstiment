@@ -5,7 +5,7 @@ import Feature from './component/Feature';
 import Sylabus from './component/Sylabus';
 import Instructor from './component/Instructors';
 import Pricing from './component/Pricing';
-import Contact from './component/Contact';
+
 import { Testimonials } from './component/Testimoni';
 import GContact from './component/GContact';
 import Banner from './component/Banner';
@@ -23,7 +23,7 @@ function App() {
       <Instructor />
       <Pricing />
       <Testimonials />
-      {/* <Contact></Contact> */}
+
       <GContact />
     </div>
   );

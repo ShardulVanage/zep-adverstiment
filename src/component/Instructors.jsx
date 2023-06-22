@@ -1,5 +1,7 @@
 import simg from "../Img/SatyajitPattnaik.png"
 import { AiFillYoutube } from 'react-icons/ai'
+import { slideAnimation } from './Motion'
+import { motion } from 'framer-motion'
 const people = [
     {
 
@@ -27,7 +29,7 @@ export default function Instructor() {
                     </div>
                     <ul role="list" className="space-y-4 lg:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0  lg:gap-8">
                         {people.map((person) => (
-                            <li key={person.name} className="rounded-lg bg-gray-800 py-10 px-6 text-center xl:px-10 xl:text-left lg:h-2/3">
+                            <motion.li {...slideAnimation("left")} key={person.name} className="rounded-lg bg-gray-800 py-10 px-6 text-center xl:px-10 xl:text-left lg:h-2/3">
                                 <div className="space-y-6 xl:space-y-10">
                                     <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
                                     <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
@@ -58,9 +60,9 @@ export default function Instructor() {
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
+                            </motion.li>
                         ))}
-                        <div className="text-slate-300 text-lg pt-4  sm:ml-16  text-left ">
+                        <motion.div {...slideAnimation("right")} className="text-slate-300 text-lg pt-4  sm:ml-16  text-left ">
 
 
                             <p className="[&>span]:text-white">Certified Data Scientist & Tensorflow Certified Developer <br />
@@ -84,7 +86,7 @@ export default function Instructor() {
                                 <br />
                                 <br />
                                 <span> Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 38,000+ subscribers</span></p>
-                        </div>
+                        </motion.div>
                     </ul>
                 </div>
             </div>

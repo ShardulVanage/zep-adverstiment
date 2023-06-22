@@ -9,10 +9,13 @@ import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { BsWhatsapp } from 'react-icons/bs'
+import { slideAnimation } from './Motion'
+import { motion } from 'framer-motion'
+
 
 export default function Location() {
     return (
-        <div>
+        <motion.div  {...slideAnimation("left")}>
 
             <Card className="mt-6 w-96 p-4 m-4 mb-16">
                 <CardBody>
@@ -71,6 +74,6 @@ export default function Location() {
 
                 </Card>
             </a>
-        </div>
+        </motion.div>
     );
 }

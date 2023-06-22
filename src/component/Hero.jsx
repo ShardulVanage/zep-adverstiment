@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-scroll'
+import { fadeAnimation, slideAnimation } from './Motion'
 
+import { motion } from 'framer-motion'
 import "./CSS/btn.css"
 
 
@@ -54,13 +56,15 @@ export default function Hero() {
 
                                     </div>
                                 </div>
-                                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                                    Data Analytics Masters - 2023 Edition
-                                </h1>
-                                <p className="mt-6 text-lg leading-8 text-gray-600">
-                                    India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
-                                </p>
-                                <div className="mt-10 flex items-center gap-x-6">
+                                <motion.div {...slideAnimation("left")} >
+                                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                                        Data Analytics Masters - 2023 Edition
+                                    </h1>
+                                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                                        India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
+                                    </p>
+                                </motion.div>
+                                <motion.div {...fadeAnimation} className="mt-10 flex items-center gap-x-6">
                                     <a href="https://rzp.io/l/ZepDAM">
                                         <button class={`btn ${isHovered ? '' : ''}`} onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}>
@@ -71,7 +75,7 @@ export default function Hero() {
                                     <a href="https://zep.thinkific.com/enroll/2355150?et=free_trial" className="text-base font-semibold leading-7 text-gray-900">
                                         Free preview <span aria-hidden="true">→</span>
                                     </a>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
