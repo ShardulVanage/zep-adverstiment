@@ -9,7 +9,7 @@ import "./CSS/btn.css"
 export default function Hero() {
 
     const [isHovered, setIsHovered] = useState(false);
-    const [displayText, setDisplayText] = useState('First Text');
+    const [displayText, setDisplayText] = useState('₹4999');
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -61,13 +61,13 @@ export default function Hero() {
                                     India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
                                 </p>
                                 <div className="mt-10 flex items-center gap-x-6">
-                                    <Link to='pricing' smooth >
+                                    <a href="https://rzp.io/l/ZepDAM">
                                         <button class={`btn ${isHovered ? '' : ''}`} onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}>
                                             <span class="btn-text-one ">Buy Now</span>
                                             <span className={`btn-text-two transform translate-x-4`} > {displayText}</span>
                                         </button>
-                                    </Link>
+                                    </a>
                                     <a href="https://zep.thinkific.com/enroll/2355150?et=free_trial" className="text-base font-semibold leading-7 text-gray-900">
                                         Free preview <span aria-hidden="true">→</span>
                                     </a>

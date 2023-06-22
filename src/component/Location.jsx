@@ -8,6 +8,7 @@ import {
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { BsWhatsapp } from 'react-icons/bs'
 
 export default function Location() {
     return (
@@ -19,25 +20,27 @@ export default function Location() {
                     <Typography variant="h5" color="blue-gray" className="mb-2">
                         Our Address                </Typography>
                     <Typography>
-                        Bhuvan Pride, near AIIMS, Bhubaneswar, Odisha-751019
+                        Bhubaneswar, Odisha-751019
                     </Typography>
                 </CardBody>
 
             </Card>
-            <Card className="mt-6 w-96 p-4 m-4 mb-16">
-                <CardBody>
-                    <EnvelopeIcon className="text-indigo-600 w-12 h-12 mb-4" />
-                    <Typography variant="h5" color="blue-gray" className="mb-2">
-                        Email Us
-                    </Typography>
-                    <Typography>
-                        contact@zepanalytics.com
+            <a href="mailto:contact@zepanalytics.com">
+                <Card className="mt-6 w-96 p-4 m-4 mb-16">
+                    <CardBody>
+                        <EnvelopeIcon className="text-indigo-600 w-12 h-12 mb-4" />
+                        <Typography variant="h5" color="blue-gray" className="mb-2">
+                            Email Us
+                        </Typography>
+                        <Typography>
+                            contact@zepanalytics.com
 
 
-                    </Typography>
-                </CardBody>
+                        </Typography>
+                    </CardBody>
 
-            </Card>
+                </Card>
+            </a>
             <Card className="mt-6 w-96 p-4 m-4 mb-16">
                 <CardBody>
                     <PhoneIcon className="text-indigo-600 w-12 h-12 mb-4" />
@@ -52,6 +55,22 @@ export default function Location() {
                 </CardBody>
 
             </Card>
+            <a href="https://wa.me/+918237040802">
+                <Card className="mt-6 w-96 p-4 m-4 mb-16">
+                    <CardBody>
+                        <BsWhatsapp className="text-indigo-600 w-12 h-12 mb-4" />
+                        <Typography variant="h5" color="blue-gray" className="mb-2">
+                            WhatsApp
+                        </Typography>
+                        <Typography>
+                            +91 8237040802
+
+
+                        </Typography>
+                    </CardBody>
+
+                </Card>
+            </a>
         </div>
     );
 }

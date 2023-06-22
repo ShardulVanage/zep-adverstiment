@@ -1,10 +1,7 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 const includedFeatures = [
-    'LIVE Lectures and Doubt Sessions',
-    'Intense Syllabus',
-    'Interview Preparation Kit',
-    'Course & Internship Certificate',
+    'Self Paced', 'Intense Syllabus', '24/7 WhatsApp Support', 'Interview Prep Kit', 'Course & Internship Certificate', 'Resume Preparation',
 ]
 
 export default function Pricing() {
@@ -17,7 +14,7 @@ export default function Pricing() {
                             Pricing
                         </h2>
                         <p className="mt-4 text-xl text-gray-600">
-                            If you're not satisfied, contact us within the first 14 days and we'll send you a full refund.
+
                         </p>
                     </div>
                 </div>
@@ -30,8 +27,7 @@ export default function Pricing() {
                             <div className="flex-1 bg-white px-6 py-8 lg:p-12">
                                 <h3 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Lifetime Course</h3>
                                 <p className="mt-6 text-base text-gray-500">
-                                    Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-                                    repellendus etur quidem assumenda.
+
                                 </p>
                                 <div className="mt-8">
                                     <div className="flex items-center">
@@ -60,14 +56,14 @@ export default function Pricing() {
                                     <span className="ml-3 text-xl font-medium tracking-normal text-gray-500"></span>
                                 </div>
                                 <p className="mt-4 text-sm">
-                                    <a href="#" className="font-medium text-gray-500 underline">
-                                        Learn about our membership policy
+                                    <a className="font-medium text-gray-500 underline cursor-pointer">
+                                        <hr />
                                     </a>
                                 </p>
                                 <div className="mt-6">
                                     <div className="rounded-md shadow">
                                         <a
-                                            href="https://zep.thinkific.com/order?ct=7e7f1a00-7ae4-4d33-b79e-8e5f3f00fa92"
+                                            href="https://rzp.io/l/ZepDAM"
                                             className="flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 text-base font-medium text-white hover:bg-gray-900"
                                         >
                                             Get Access
@@ -75,9 +71,7 @@ export default function Pricing() {
                                     </div>
                                 </div>
                                 <div className="mt-4 text-sm">
-                                    <a href="#" className="font-medium text-gray-900">
-                                        Get a free sample <span className="font-normal text-gray-500">(20MB)</span>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>

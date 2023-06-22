@@ -60,20 +60,19 @@ export default function Instructor() {
                                 </div>
                             </li>
                         ))}
-                        <div className="text-white text-lg pt-4  sm:ml-16  text-left">
+                        <div className="text-slate-300 text-lg pt-4  sm:ml-16  text-left ">
 
 
-                            <p>Certified Data Scientist & Tensorflow Certified Developer <br />
-                                Number of students trained so far: 10000+ <br />
-                                Average Trainer Score: 9+ <br />
+                            <p className="[&>span]:text-white">Certified Data Scientist & Tensorflow Certified Developer <br />
+                                Number of students trained so far: <span>10000+</span> <br />
+                                Average Trainer Score: <span>9+</span> <br />
                                 <br />
 
 
-                                12+ years experience working in Data Analytics and Data Sciences across different industry verticals including telecom, cyber security, insurance, e-commerce etc.
+                                <span>12+ years experience working in Data Analytics and Data Sciences </span>across different industry verticals including telecom, cyber security, insurance, e-commerce etc.
                                 <br />
                                 <br />
-                                Expertised on BI tech stack including Power BI & Tableau.
-                                <br />
+                                <span> Expertised on BI tech stack including Power BI & Tableau.</span>
                                 <br />
                                 Analytic experience includes ETL, descriptive and predictive data analysis, data visualization​, Machine Learning & Deep Learning
                                 <br />
@@ -81,10 +80,10 @@ export default function Instructor() {
                                 Conducted various training sessions on Data Science, Analytics, ML & AI, as well as attended various International conferences as keynote speaker & guest on Data Science, ML & AI in various universities across APAC Region.
                                 <br />
                                 <br />
-                                Over 8+ years of training & teaching experience into Data Science & Analytics
+                                <span>Over 8+ years of training & teaching experience into Data Science & Analytics</span>
                                 <br />
                                 <br />
-                                Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 38,000+ subscribers</p>
+                                <span> Owner of more than 20+ data communities over the globe, and runs a small YouTube channel on my name having 38,000+ subscribers</span></p>
                         </div>
                     </ul>
                 </div>
