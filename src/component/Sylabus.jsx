@@ -367,7 +367,7 @@ export default function Sylabus() {
                 <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>k-nearest neighbors (Code) <span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
 
 
-                "FREE PREVIEW",
+
                 "Decision Trees (Theory)",
                 "Decision Tree (Code)",
                 "Random Forests",
@@ -390,7 +390,7 @@ export default function Sylabus() {
                 "Introduction to ETL & Data Warehouse",
                 "What is ETL?",
                 <a className=' font-light underline ' href='https://zep.thinkific.com/enroll/2355150?et=free_trial'>ETL Tools & Azure Data Factory Architecture<span className='bg-black text-white py-1 px-2 rounded-lg text-xs ml-2'>Free Preview  </span></a>,
-                "FREE PREVIEW",
+
                 "What is Data Warehouse?",
                 "Benefits of Data Warehousing",
                 "Data Warehouse Structure",
