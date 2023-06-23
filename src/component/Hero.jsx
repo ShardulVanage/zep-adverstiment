@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-scroll'
+
 import { fadeAnimation, slideAnimation } from './Motion'
 
 import { motion } from 'framer-motion'
@@ -10,8 +8,17 @@ import "./CSS/btn.css"
 
 export default function Hero() {
 
+    const [nextMonthDate, setNextMonthDate] = useState(new Date());
     const [isHovered, setIsHovered] = useState(false);
     const [displayText, setDisplayText] = useState('₹4999');
+    useEffect(() => {
+        const nextMonth = new Date();
+        nextMonth.setMonth(nextMonth.getMonth() + 1);
+        setNextMonthDate(nextMonth);
+    }, []);
+
+    const options = { month: 'short' };
+    const nextMonthDateString = nextMonthDate.toLocaleDateString('en-US', options);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,7 +35,7 @@ export default function Hero() {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
 
     return (
         <div>
@@ -48,7 +55,7 @@ export default function Hero() {
 
 
 
-                        <div className="relative py-32 px-8 sm:py-40 lg:py-56 lg:px-2 lg:pr-0">
+                        <div className="relative py-24 px-8 sm:py-40 lg:py-56 lg:px-2 lg:pr-0">
                             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                                 <div className="hidden sm:mb-10 sm:flex">
                                     <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -77,6 +84,7 @@ export default function Hero() {
                                     </a>
                                 </motion.div>
                             </div>
+                            <p className=' mt-12 text-lg font-semibold sm:mr-72 mr-14'>Join us before {nextMonthDateString} 1 to avail 50% discount</p>
                         </div>
                     </div>
                 </div>

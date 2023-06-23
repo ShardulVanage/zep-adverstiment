@@ -2,18 +2,10 @@ import { XMarkIcon } from '@heroicons/react/20/solid';
 import React, { useEffect, useState } from 'react';
 
 export default function Banner() {
-    const [currentDate, setCurrentDate] = useState(new Date());
-    const [nextMonthDate, setNextMonthDate] = useState(new Date());
+
     const [disabled, setDisabled] = useState(false);
 
-    useEffect(() => {
-        const nextMonth = new Date();
-        nextMonth.setMonth(nextMonth.getMonth() + 1);
-        setNextMonthDate(nextMonth);
-    }, []);
 
-    const options = { month: 'short' };
-    const nextMonthDateString = nextMonthDate.toLocaleDateString('en-US', options);
 
     const handleClick = () => {
         setDisabled(true);
@@ -39,28 +31,29 @@ export default function Banner() {
                 >
                     {/* Background shape */}
                 </div>
-                <div className="flex sm:flex-wrap items-center gap-x-4 gap-y-2 justify-center flex-row">
-                    <p className="sm:text-sm sm:leading-6 text-gray-900 text-xs flex sm:flex-row flex-col">
+                <div className="flex sm:flex-wrap items-center gap-x-4 gap-y-2 justify-between flex-row">
+                    <p className=" sm:leading-6 text-gray-900 text-sm flex sm:flex-row flex-col">
                         <strong className="font-semibold  ">Data Analytics Masters 2023.</strong>
                         <hr />
-                        <svg viewBox="0 0 2 2" className="mx-2  h-0.5 w-0.5 fill-current hidden sm:inline" aria-hidden="true">
+                        <svg viewBox="0 0 2 2" className="mx-2  h-0.5 w-0.5 fill-current hidden sm:inline " aria-hidden="true">
                             <circle cx={1} cy={1} r={1} />
                         </svg>
-                        Zep Analytics. Join us before {nextMonthDateString} 1 to avail 50% discount
+                        Zep Analytics. Join our community!!
                     </p>
 
                     <a
                         href="https://t.me/+cHd6h0_F3ZA0ZmRl"
-                        className="flex-none rounded-full bg-gray-900 px-3.5 py-1 sm:text-sm text-xs font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                        className="ml-12 sm:ml-0 flex-none rounded-full bg-gray-900 px-3.5 py-1 sm:text-sm text-xs font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                     >
                         Join Us <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
+
             </div>
             {/* Dismiss button */}
             <div className="flex flex-1 justify-end">
                 <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]" onClick={handleClick}>
-                    <span className="sr-only">Dismiss</span>
+
                     <XMarkIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
                 </button>
             </div>

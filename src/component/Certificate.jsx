@@ -59,9 +59,11 @@ export default function Certificate() {
                         </div>
                         <div className='mt-12 p-4 '>
 
-                            <button href="https://zep.thinkific.com/order?ct=7e7f1a00-7ae4-4d33-b79e-8e5f3f00fa92"
-                                type="button" class="shadow-2xl text-white bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2">
-                                Get Certified Now!</button>
+                            <a href="https://rzp.io/l/ZepDAM">
+                                <button
+                                    type="button" class="shadow-2xl text-white bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2">
+                                    Get Certified Now!</button>
+                            </a>
                         </div>
                     </div>
                     <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
