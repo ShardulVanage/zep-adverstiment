@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import { fadeAnimation, slideAnimation } from './Motion'
-
+import logo from '../Img/logo.png'
 import { motion } from 'framer-motion'
 import "./CSS/btn.css"
 
@@ -55,7 +55,17 @@ export default function Hero() {
 
 
 
-                        <div className="relative py-24 px-8 sm:py-40 lg:py-56 lg:px-2 lg:pr-0">
+                        <div className="relative py-24 px-8 sm:py-40 lg:pb-56 lg:px-2 lg:pr-0">
+                            <div className='flex  items-center mb-14 sm:text-lg text-sm '>
+                                {/* bg-gradient-to-tr from-indigo-900 via-indigo-700 to-indigo-900 */}
+                                <a href="https://zepanalytics.com/">
+
+                                    <div className=' shadow-2xl flex flex-row items-center border-2 border-indigo-400 rounded-full  text-blue-600 p-2 pl-2 '> <img src={logo} alt="" className="border-2 sm:w-10 w-8 border-white p-0 rounded-full bg-white   " />
+                                        <h1 className='pl-2 font-medium'>Zep Analytics</h1></div>
+                                </a>
+
+
+                            </div>
                             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                                 <div className="hidden sm:mb-10 sm:flex">
                                     <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
