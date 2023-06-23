@@ -1,5 +1,5 @@
 import { XMarkIcon } from '@heroicons/react/20/solid';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Banner() {
 

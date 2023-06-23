@@ -1,12 +1,7 @@
 /* This example requires Tailwind CSS v3.0+ */
 import { Disclosure, } from '@headlessui/react'
-import { CameraIcon, MinusSmallIcon, PlusSmallIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
-const abc = [
-    "Data Sourcing (Connecting various types of files)",
-    " Data Cleaning Techniques (Handling null values, outlier treatment, Filtering data, etc.)",
-    " Univariate Analysis",
-    "Bivariate Analysis",
-    "Multivariate Analysis",]
+import { MinusSmallIcon, PlusSmallIcon, } from '@heroicons/react/24/outline'
+
 
 export default function Sylabus() {
     const faqs = [
@@ -134,7 +129,7 @@ export default function Sylabus() {
                 "Probability Sampling"
                 ,
                 "Cluster Random Sampling",
-                ,
+
                 " Non probability sampling"
                 ,
                 "Chapter 3 - Agenda"
@@ -172,7 +167,7 @@ export default function Sylabus() {
                 "Conditional Probability",
 
                 " Bayes Theorem Part 1",
-                ,
+
                 "Bayes Theorem Part 2",
 
                 "Chapter 5 - Agenda",
@@ -192,7 +187,7 @@ export default function Sylabus() {
                 "Calculating Probability with Z-Score",
 
                 "Z-Score Calculation Table",
-                ,
+
                 'Example',
 
                 "Chapter 6 Agenda",
@@ -202,7 +197,7 @@ export default function Sylabus() {
                 " Covariance",
 
                 "Correlation",
-                ,
+
                 "Chapter 7 - Agenda"
                 ,
                 " Hypothesis Testing",
