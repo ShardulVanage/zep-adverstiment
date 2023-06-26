@@ -31,7 +31,7 @@ export default function Instructor() {
                         {people.map((person) => (
                             <motion.li {...slideAnimation("left")} key={person.name} className="rounded-lg bg-gray-800 py-10 px-6 text-center xl:px-10 xl:text-left lg:h-2/3">
                                 <div className="space-y-6 xl:space-y-10">
-                                    <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
+                                    <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1687806712/whmgy2fkkrpsduevi9mk.png" alt="" />
                                     <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                                         <div className="space-y-1 text-lg font-medium leading-6">
                                             <h3 className="text-white">{person.name}</h3>
