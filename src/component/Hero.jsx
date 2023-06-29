@@ -104,7 +104,7 @@ export default function Hero() {
                                     </a>
                                 </motion.div>
                             </div>
-                            <p className=' mt-12 text-lg font-semibold sm:mr-72 mr-14'>Join us before {nextMonthDateString} 1 to avail 50% discount</p>
+                            <p className=' mt-12 text-lg font-semibold sm:mr-72 mr-18'>Join us before {nextMonthDateString} 1 to avail 50% discount</p>
                         </div>
                     </div>
                 </div>
