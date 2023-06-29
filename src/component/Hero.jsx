@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import { Link } from 'react-scroll'
 import { fadeAnimation, slideAnimation } from './Motion'
 import logo from '../Img/logo.png'
 import { motion } from 'framer-motion'
@@ -39,6 +39,7 @@ export default function Hero() {
 
     return (
         <div>
+
 
 
             <div className="relative bg-white">
@@ -82,13 +83,22 @@ export default function Hero() {
                                     </p>
                                 </motion.div>
                                 <motion.div {...fadeAnimation} className="mt-10 flex items-center gap-x-6">
-                                    <a href="https://rzp.io/l/ZepDAM">
+                                    {/* <a href="https://rzp.io/l/ZepDAM">
                                         <button class={`btn ${isHovered ? '' : ''}`} onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}>
                                             <span class="btn-text-one ">Buy Now</span>
                                             <span className={`btn-text-two transform translate-x-4`} > {displayText}</span>
                                         </button>
-                                    </a>
+                                    </a> */}
+                                    <Link to='pricing' smooth>
+                                        <a >
+                                            <button class={`btn ${isHovered ? '' : ''}`} onMouseEnter={handleMouseEnter}
+                                                onMouseLeave={handleMouseLeave}>
+                                                <span class="btn-text-one ">Buy Now</span>
+                                                <span className={`btn-text-two transform translate-x-4`} > {displayText}</span>
+                                            </button>
+                                        </a>
+                                    </Link>
                                     <a href="https://zep.thinkific.com/enroll/2355150?et=free_trial" className="text-base font-semibold leading-7 text-gray-900">
                                         Free preview <span aria-hidden="true">→</span>
                                     </a>
