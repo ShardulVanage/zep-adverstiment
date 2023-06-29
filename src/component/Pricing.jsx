@@ -28,7 +28,7 @@ const tiers = [
 
 export default function Example() {
     return (
-        <div className="bg-gray-900">
+        <div name='pricing' className="bg-gray-900">
             <div className="relative overflow-hidden pt-32 pb-96 lg:pt-40">
                 <div>
                     <img

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import certifidcate from '../Img/google-data-analyst.jpeg'
-
+import { Link } from 'react-scroll'
 const navigation = [
     { name: 'Product', href: '#' },
     { name: 'Features', href: '#' },
@@ -59,11 +59,11 @@ export default function Certificate() {
                         </div>
                         <div className='mt-12 p-4 '>
 
-                            <a href="https://rzp.io/l/ZepDAM">
+                            <Link to='pricing' smooth>
                                 <button
                                     type="button" class="shadow-2xl text-white bg-gradient-to-r from-indigo-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2">
                                     Get Certified Now!</button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
