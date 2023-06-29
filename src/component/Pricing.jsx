@@ -60,10 +60,10 @@ export default function Example() {
                                         <h3 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600" id={tier.id}>
                                             {tier.name}
                                         </h3>
-                                        <div className="mt-4 flex items-baseline text-4xl font-bold tracking-tight text-gray-900">
+                                        <div className="mt-4 flex items-baseline text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">
                                             {tier.priceMonthly}
 
-                                            <span className='pl-2 text-2xl text-indigo-600'><del >{tier.ndprice}</del><span className='text-base text-black pl-2'>50%</span><span className=' pl-1 text-lg text-black '>Off</span> </span>
+                                            <span className='pl-2 text-2xl sm:text-3xl text-indigo-600'><del >{tier.ndprice}</del><span className='text-lg text-black pl-2'>50%</span><span className=' pl-0.5 text-lg text-black '>Off</span> </span>
                                         </div>
 
                                     </div>
