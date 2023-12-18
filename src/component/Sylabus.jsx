@@ -408,6 +408,7 @@ export default function Sylabus() {
             answer: [
                 "Power BI - Live Project",
                 "Tableau - Live Project",
+                "Financial Dashboard",
 " ⁠Sales Analytics",
 "⁠Cyber Security Breaches",
 " ⁠Telecom Analytics",
