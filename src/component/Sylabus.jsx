@@ -407,8 +407,11 @@ export default function Sylabus() {
             question: "Capstone Project",
             answer: [
                 "Power BI - Live Project",
-
-                " Tableau - Live Project",
+                "Tableau - Live Project",
+" ⁠Sales Analytics",
+"⁠Cyber Security Breaches",
+" ⁠Telecom Analytics",
+" ⁠HR Analytics",
             ],
         },
         {
