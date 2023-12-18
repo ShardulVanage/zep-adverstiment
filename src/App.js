@@ -15,6 +15,14 @@ import Certificate from './component/Certificate';
 function App() {
   return (
     <div className="App">
+      <a
+        href="https://wa.me/+918237040802"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
       <Banner />
       <Hero></Hero>
       <Feature />

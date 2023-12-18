@@ -1,9 +1,18 @@
 import { XMarkIcon } from '@heroicons/react/20/solid';
-import React, { useState } from 'react';
 
+import React, { useState, useEffect } from 'react';
 export default function Banner() {
 
     const [disabled, setDisabled] = useState(false);
+const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentYear(new Date().getFullYear());
+    }, 1000); // Updates every second, change as needed
+
+    return () => clearInterval(interval);
+  }, []);
 
 
 
@@ -33,7 +42,7 @@ export default function Banner() {
                 </div>
                 <div className="flex sm:flex-wrap items-center gap-x-4 gap-y-2 justify-between flex-row">
                     <p className=" sm:leading-6 text-gray-900 text-sm flex sm:flex-row flex-col">
-                        <strong className="font-semibold  ">Data Analytics Masters 2023.</strong>
+                        <strong className="font-semibold  ">Data Analytics Masters {currentYear}.</strong>
                         <hr />
                         <svg viewBox="0 0 2 2" className="mx-2  h-0.5 w-0.5 fill-current hidden sm:inline " aria-hidden="true">
                             <circle cx={1} cy={1} r={1} />

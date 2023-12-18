@@ -19,8 +19,17 @@ export default function Hero() {
 
     const options = { month: 'short' };
     const nextMonthDateString = nextMonthDate.toLocaleDateString('en-US', options);
+const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentYear(new Date().getFullYear());
+    }, 1000); // Updates every second, change as needed
 
+    return () => clearInterval(interval);
+  }, []);
     useEffect(() => {
+       
+       
         const timer = setTimeout(() => {
             setDisplayText(isHovered ? '₹4999' : <del className=''>₹9999</del>);
         }, 700); // Delay in milliseconds
@@ -76,7 +85,7 @@ export default function Hero() {
                                 </div>
                                 <motion.div {...slideAnimation("left")} >
                                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                                        Data Analytics Masters - 2023 Edition
+                                        Data Analytics Masters - {currentYear} Edition
                                     </h1>
                                     <p className="mt-6 text-lg leading-8 text-gray-600">
                                         India's No.1 Data Analytics Course having multiple features to excel and make you job ready for various roles.
