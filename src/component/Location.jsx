@@ -66,7 +66,7 @@ export default function Location() {
                             WhatsApp
                         </Typography>
                         <Typography>
-                            +91 8237040802
+                            +91 79786 52529
 
 
                         </Typography>
