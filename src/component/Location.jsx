@@ -52,13 +52,13 @@ export default function Location() {
                     </Typography>
                     <Typography>
 
-                        +91 7007243034
+                        +91 79786 52529
 
                     </Typography>
                 </CardBody>
 
             </Card>
-            <a href="https://wa.me/+918237040802">
+            <a href="https://wa.me/+917978652529">
                 <Card className="mt-6 w-96 p-4 m-4 mb-16">
                     <CardBody>
                         <BsWhatsapp className="text-indigo-600 w-12 h-12 mb-4" />
@@ -66,7 +66,7 @@ export default function Location() {
                             WhatsApp
                         </Typography>
                         <Typography>
-                            +91 8237040802
+                            +91 79786 52529
 
 
                         </Typography>

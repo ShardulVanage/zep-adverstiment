@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <a
-        href="https://wa.me/+918237040802"
+        href="https://wa.me/+917978652529"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
