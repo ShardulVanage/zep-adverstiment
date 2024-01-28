@@ -5,8 +5,25 @@ import logo from '../Img/logo.png'
 import { motion } from 'framer-motion'
 import "./CSS/btn.css"
 
+import React from "react";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import Button from "@material-ui/core/Button";
 
 export default function Hero() {
+const [open, setOpen] = React.useState(false);
+ 
+    const handleClickToOpen = () => {
+        setOpen(true);
+    };
+ 
+    const handleToClose = () => {
+        setOpen(false);
+    };
+
 
     const [nextMonthDate, setNextMonthDate] = useState(new Date());
     const [isHovered, setIsHovered] = useState(false);
@@ -114,6 +131,65 @@ const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
                                 </motion.div>
                             </div>
                             <p className=' mt-12 text-lg font-semibold sm:mr-72 mr-18'>Join us before {nextMonthDateString} 1 to avail 50% Discount</p>
+                            <button onClick={handleClickToOpen} className='sm:mr-72 mr-18 mt-8 sm:w-2/4 overflow-hidden w-full py-6 text-white drop-shadow-md rounded-2xl  text-lg flex items-center justify-center h-4 ' style={{background: "linear-gradient(  to top, #6e61ab, #4b3987, #6e61ab)"}} >
+                                contact us
+                            </button>
+                            
+                                
+                            <Dialog fullWidth={"sm"} open={open} onClose={handleToClose}>
+                                <DialogTitle > <h1 className='text-2xl font-semibold'>Get in touch </h1></DialogTitle>
+                                <DialogContent>
+                                    <DialogContentText>
+                                       <form class="w-full">
+  <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-5 group">
+         <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+         <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+    </div>
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="number" name="floating_number" id="floating_number" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">whatsapp number</label>
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+       <input type="number" name="floating_phno" id="floating_phno" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone.no</label>
+  </div>
+
+  <div class="relative z-0 w-full mb-5 group">
+       <label for="underline_select" class="sr-only">profession</label>
+<select id="underline_select" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+    <option disabled selected>Profession</option>
+    <option value="Working">Working</option>
+    <option value="Student">Student</option>
+    
+</select>
+       
+       {/* <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+  */}
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+       <input type="text" name="floating_phno" id="floating_phno" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-400 dark:focus:border-purple-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" "  />
+      <label for="floating_msg" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-purple-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mesaage</label>
+  </div>
+ 
+  
+  <button type="submit" class=" w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  sm:w-auto px-5 py-2.5 text-center dark:bg-purple-800 dark:hover:bg-purple-900 dark:focus:ring-purple-900">Submit</button>
+</form>
+                                    </DialogContentText>
+                                </DialogContent>
+                                <DialogActions>
+                                    <Button onClick={handleToClose}
+                                        color="primary" autoFocus>
+                                        Close
+                                    </Button>
+                                </DialogActions>
+                            </Dialog>
                         </div>
                     </div>
                 </div>
